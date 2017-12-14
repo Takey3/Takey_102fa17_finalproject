@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>Resume Homepage</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli');
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.jpeg">
 </head>
-<body>
 
+<body>
+    <header>
+        <h1>Tyler Akey</h1>
+        <h3>My Resume</h3>
+    </header>
+    <main>
+        <aside>
+            <h2> Directory:</h2>
+            <nav id="nav_list">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="education.html" >Education History</a></li>
+                    <li><a href="projects.html">Completed Projects</a></li>
+                    <li><a href="work.html" >Work Experience</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <img src="images/me.jpg" alt="Tyler Akey" width="300" height="400">
+            <p>My name is Tyler Akey and i am a student at the university of south carolina beaufort where I am a Freshamn Computational science major.
+                I have spent this last semester gaining the knowledge of HTML5 and CSS3 as well as the understanding of a computer and also have the ability to properly use Microsoft Office.</p>
+
+        </section>
+    </main>
+    <footer>
+        <!--<p>&copy; Copyright 2017 Tyler Akey.</p>-->
+        <p id="date">
+            <script type="text/javascript" >
+                var today = new Date();
+                document.write( "Current date: " );
+                document.write( today.toDateString() );
+            </script>
+        </p>
+        <p id="date2">
+            <script type="text/javascript" >
+                var today = new Date();
+                document.write( "&copy;&nbsp;" );
+                document.write( today.getFullYear() );
+                document.write( ", Copyright 2017 Tyler Akey" )
+            </script>
+        </p>
+    </footer>
 </body>
 </html>
